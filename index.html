@@ -10,22 +10,27 @@
 <body>
 
     <main class="home-main">
-        <div class="home-content">
-            <svg class="home-logo" viewBox="0 0 200 240" aria-label="Brady Holdings Crest">
-                <path d="M20,20 L180,20 L180,120 C180,180 100,220 100,220 C100,220 20,180 20,120 Z" 
-                      fill="none" stroke="currentColor" stroke-width="2"/>
-            </svg>
-            
-            <h1 class="brand-name">Brady Partners</h1>
+        <div class="brand-wrapper">
+            <div class="crest-container">
+                <svg viewBox="0 0 400 500" class="svg-crest">
+                    <path d="M200,50 L250,150 L350,150 L270,220 L300,320 L200,260 L100,320 L130,220 L50,150 L150,150 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="200" cy="200" r="80" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </div>
+
+            <div class="name-container">
+                <svg viewBox="0 0 600 100" class="svg-brand-name">
+                    <text x="0" y="70" font-family="serif" font-size="70" letter-spacing="15" fill="currentColor">BRADY HOLDINGS</text>
+                </svg>
+            </div>
         </div>
     </main>
 
     <footer class="footer-main">
-        <div class="footer-content">
+        <div class="footer-inner">
             <p>© 2026 Brady Holdings Limited. All rights reserved.</p>
             <p>The Brady Holdings name, and all trademarks and logos displayed on this website, are owned by Brady Holdings Limited.</p>
             <p>The unauthorized use of any trademark displayed on this website is strictly prohibited.</p>
-            <br>
             <a href="privacy.html" class="footer-link">Privacy Policy</a>
         </div>
     </footer>
