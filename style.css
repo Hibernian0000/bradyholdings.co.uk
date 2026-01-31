@@ -1,43 +1,9 @@
-/* ============================================
-   BRADY HOLDINGS - REFINED STYLE
-   Based on Institutional Minimalist Aesthetic
-   ============================================ */
-
-/* --------------------------------------------
-   FONTS
-   -------------------------------------------- */
-@font-face {
-    font-family: 'CustomFont';
-    src: url('assets/fonts/custom-font.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 :root {
-    /* Colors - Matched to Reference Image */
-    --color-primary: #0f2b5f;    /* Deep Navy Blue */
-    --color-background: #f4f6f8; /* Cool Off-White */
-    --color-text: #0f2b5f;       /* Text is same as primary */
-    --color-text-light: #8e9aaf; /* Muted Blue-Grey for footer */
-    --color-surface: #ffffff;
-    
-    /* Typography */
-    --font-serif: 'CustomFont', 'Georgia', 'Times New Roman', serif;
-    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    
-    /* Sizes */
-    --font-size-hero: 3rem;      /* Large brand text */
-    --font-size-footer: 0.7rem;  /* Tiny footer text */
-    
-    /* Layout */
-    --max-width: 1200px;
-    --logo-size: 280px;          /* Height of the crest placeholder */
+    --color-navy: #1a3668;
+    --color-bg: #f8f9fa;
+    --color-grey: #999999;
 }
 
-/* --------------------------------------------
-   RESET & BASE
-   -------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -45,119 +11,74 @@
 }
 
 body {
-    font-family: var(--font-serif);
-    background-color: var(--color-background);
-    color: var(--color-text);
-    /* Centers content vertically and horizontally */
-    min-height: 100vh;
+    background-color: var(--color-bg);
+    color: var(--color-navy);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; /* Pushes footer to bottom, content to center */
-    -webkit-font-smoothing: antialiased;
+    justify-content: center;
+    overflow: hidden; /* Removes scrollbars to feel like a static landing page */
 }
 
-/* --------------------------------------------
-   CENTER HERO SECTION
-   -------------------------------------------- */
+/* --- Centered Logo/Brand Section --- */
 .home-main {
-    flex: 1; /* Takes up all available vertical space */
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 2rem;
 }
 
-.home-content {
+.brand-wrapper {
     display: flex;
-    flex-direction: row; /* Side-by-Side Layout */
     align-items: center;
     justify-content: center;
-    gap: 4rem; /* Space between Crest and Text */
-    max-width: var(--max-width);
+    gap: 60px; /* Space between crest and name */
 }
 
-/* The Crest Placeholder */
-.home-logo {
-    color: var(--color-primary);
-    height: var(--logo-size);
-    width: auto;
-    /* Optional: Add a stroke to make the placeholder look more like a line-drawing crest */
-    stroke: currentColor;
-    stroke-width: 1; 
+.crest-container {
+    width: 300px; /* Adjust to match the size of the crest in the image */
 }
 
-/* The Brand Name Text */
-.brand-name {
-    font-family: var(--font-serif);
-    font-size: var(--font-size-hero);
-    font-weight: 400; /* Regular weight, not bold */
-    text-transform: uppercase;
-    letter-spacing: 0.15em; /* Wide spacing like the reference */
-    line-height: 1.1;
-    color: var(--color-primary);
-    white-space: nowrap; /* Keep on one line if possible */
+.name-container {
+    width: 500px; /* Adjust based on your text length */
 }
 
-/* --------------------------------------------
-   FOOTER
-   -------------------------------------------- */
+svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    color: var(--color-navy);
+}
+
+/* --- Small Grey Footer Section --- */
 .footer-main {
     width: 100%;
-    padding: 3rem 1rem;
+    padding-bottom: 40px;
     text-align: center;
 }
 
-.footer-content {
-    font-family: var(--font-sans); /* Footer uses clean sans-serif */
-    font-size: var(--font-size-footer);
-    color: var(--color-text-light);
-    line-height: 1.8;
-    max-width: 600px;
+.footer-inner {
+    max-width: 800px;
     margin: 0 auto;
 }
 
+.footer-inner p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 10px; /* Very small text like the screenshot */
+    color: var(--color-grey);
+    line-height: 1.6;
+    margin-bottom: 2px;
+}
+
 .footer-link {
-    color: var(--color-text-light);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 10px;
+    color: var(--color-grey);
     text-decoration: underline;
-    transition: color 0.2s ease;
 }
 
 .footer-link:hover {
-    color: var(--color-primary);
-}
-
-/* --------------------------------------------
-   HELPER FOR SCREEN READERS
-   -------------------------------------------- */
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-/* --------------------------------------------
-   RESPONSIVE (Mobile)
-   -------------------------------------------- */
-@media (max-width: 768px) {
-    .home-content {
-        flex-direction: column; /* Stack vertically on phones */
-        gap: 2rem;
-        text-align: center;
-    }
-
-    .brand-name {
-        font-size: 2rem;
-        white-space: normal; /* Allow wrapping on mobile */
-    }
-
-    :root {
-        --logo-size: 150px; /* Smaller crest on mobile */
-    }
+    color: var(--color-navy);
 }
