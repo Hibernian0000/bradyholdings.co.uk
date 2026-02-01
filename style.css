@@ -343,7 +343,7 @@ nav {
 
 .privacy-date {
     font-size: 0.8125rem;
-    color: #999;
+    color: #004225;
     margin-bottom: 56px;
 }
 
@@ -367,7 +367,7 @@ nav {
 .privacy-main p {
     font-size: 0.9375rem;
     line-height: 1.8;
-    color: #444;
+    color: #004225;
     margin-bottom: 1em;
 }
 
@@ -379,7 +379,7 @@ nav {
 .privacy-main li {
     font-size: 0.9375rem;
     line-height: 1.8;
-    color: #444;
+    color: #004225;
     margin-bottom: 0.4em;
 }
 
