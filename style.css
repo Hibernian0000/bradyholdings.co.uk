@@ -36,7 +36,7 @@ body {
     font-size: 1rem;
     line-height: 1.7;
     color: #212529;
-    background-color: #fff;
+    background-color: #2596be;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -110,7 +110,7 @@ nav {
     display: block;
     width: 24px;
     height: 1.5px;
-    background: #212529;
+    background: #2596be;
 }
 
 /* --------------------------------------------
