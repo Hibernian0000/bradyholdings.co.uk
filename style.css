@@ -1,6 +1,5 @@
 /* ============================================
    BRADY HOLDINGS - MAIN STYLESHEET
-   Styled to match Mousse Partners layout
    ============================================ */
 
 /* --------------------------------------------
@@ -110,7 +109,7 @@ nav {
     display: block;
     width: 24px;
     height: 1.5px;
-    background: #2596be;
+    background: #212529;
 }
 
 /* --------------------------------------------
