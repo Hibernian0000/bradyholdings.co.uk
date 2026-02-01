@@ -174,7 +174,7 @@ nav {
 .about-text p {
     font-size: 1rem;
     line-height: 1.9;
-    color: #212529;
+    color: #004225;
     margin-bottom: 1.6em;
 }
 
@@ -183,7 +183,7 @@ nav {
 }
 
 .about-text a {
-    color: #212529;
+    color: #004225;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
