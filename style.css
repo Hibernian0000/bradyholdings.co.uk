@@ -35,7 +35,7 @@ body {
     font-size: 1rem;
     line-height: 1.7;
     color: #1a3028;
-    background-color: #f0ebe0;
+    background-color: #f3f5f7;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #f0ebe0;
+    background-color: ##f3f5f7;
 }
 
 .nav-links {
@@ -473,7 +473,7 @@ textarea:focus-visible {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #f0ebe0;
+        background-color: #f3f5f7;
         flex-direction: column;
         gap: 0;
         padding: 20px 28px 28px;
